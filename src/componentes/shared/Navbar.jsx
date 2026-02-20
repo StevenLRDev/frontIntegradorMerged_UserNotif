@@ -63,7 +63,7 @@ const SECCIONES_MODULOS = [
     icono: '📊',
     label: 'Reportes Estadísticos',
     soloProfesor: true,
-    proximamente: true,
+    proximamente: false,
     items: [
       { label: 'Ver Reportes', ruta: '/reportes', soloProfesor: true },
     ],

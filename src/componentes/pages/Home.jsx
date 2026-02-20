@@ -98,7 +98,7 @@ function Home() {
       color: 'azul',
       disponible: esProfesor,   // ← Solo profesores ven esta tarjeta
       soloProfesor: true,
-      proximamente: true,
+      proximamente: false,
     },
   ];
 

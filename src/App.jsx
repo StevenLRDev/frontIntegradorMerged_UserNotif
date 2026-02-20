@@ -31,6 +31,9 @@ import Navbar from './componentes/shared/Navbar';
 import Inicio from './componentes/pages/Inicio';
 import Home from './componentes/pages/Home';
 
+
+//========== REPORTES ESTADÍSTICOS ========
+import ReportesEstadisticos from './componentes/reportes/ReportesEstadisticos'
 /*
   PRÓXIMOS MÓDULOS — descomenta cuando estén listos:
 
@@ -43,7 +46,7 @@ import Home from './componentes/pages/Home';
   import ListaMatricula from './componentes/matricula/ListaMatricula';
   import FormularioMatricula from './componentes/matricula/FormularioMatricula';
 
-  import ReportesEstadisticos from './componentes/reportes/ReportesEstadisticos';
+  ;
 */
 
 // ===== ESTILOS GLOBALES =====
@@ -125,9 +128,9 @@ function App() {
         */}
 
         {/* ===== MÓDULO: REPORTES (próximo - solo profesores) ===== */}
-        {/*
+        {
         <Route path="/reportes" element={<RutaSoloProfesor><ReportesEstadisticos /></RutaSoloProfesor>} />
-        */}
+        }
 
         {/* ===== FALLBACK ===== */}
         <Route path="*" element={<Navigate to="/" replace />} />
