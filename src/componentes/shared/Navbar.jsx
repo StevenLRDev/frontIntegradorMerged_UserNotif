@@ -41,10 +41,10 @@ const SECCIONES_MODULOS = [
     icono: '📝',
     label: 'Notas',
     soloProfesor: false,
-    proximamente: true,
+    proximamente: false,
     items: [
       { label: 'Ver Notas',  ruta: '/notas',       soloProfesor: false },
-      { label: 'Nueva Nota', ruta: '/notas/crear',  soloProfesor: true  },
+      { label: 'Nueva Nota', ruta: '/notas/crear',  soloProfesor: true },
     ],
   },
   {
