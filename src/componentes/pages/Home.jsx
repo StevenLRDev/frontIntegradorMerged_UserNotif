@@ -39,7 +39,7 @@ function Home() {
       ruta: '/notificaciones',
       color: 'cyan',
       disponible: true,
-      soloProfesor: false,
+      soloProfesor: true,
       proximamente: false,
     },
     {
@@ -62,7 +62,7 @@ function Home() {
       color: 'azul',
       disponible: true,
       soloProfesor: false,
-      proximamente: true,
+      proximamente: false,
     },
 
     // ===== MÓDULO PRÓXIMO: NOTAS =====
@@ -73,7 +73,7 @@ function Home() {
       ruta: '/notas',
       color: 'cyan',
       disponible: true,
-      soloProfesor: false,
+      soloProfesor: true,
       proximamente: true,
     },
 
@@ -138,7 +138,7 @@ function Home() {
                 key={index}
                 className={`tarjeta tarjeta-${tarjeta.color} ${tarjeta.proximamente ? 'tarjeta-proximamente' : ''}`}
                 onClick={() => irA(tarjeta)}
-                style={{ cursor: tarjeta.proximamente ? 'default' : 'pointer' }}
+                style={{ cursor: tarjeta.color ? 'default' : 'pointer' }}
               >
                 <div className="tarjeta-icono">{tarjeta.icono}</div>
                 <h3>{tarjeta.titulo}</h3>

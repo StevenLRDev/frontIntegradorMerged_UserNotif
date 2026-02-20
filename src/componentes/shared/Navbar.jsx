@@ -18,7 +18,7 @@ const SECCIONES_MODULOS = [
     id: 'notificaciones',
     icono: '📧',
     label: 'Notificaciones',
-    soloProfesor: false,
+    soloProfesor: true,
     proximamente: false,
     items: [
       { label: 'Ver Notificaciones', ruta: '/notificaciones',       soloProfesor: false },
@@ -30,7 +30,7 @@ const SECCIONES_MODULOS = [
     icono: '🎓',
     label: 'Profesores',
     soloProfesor: false,
-    proximamente: true,
+    proximamente: false,
     items: [
       { label: 'Ver Profesores', ruta: '/profesores',       soloProfesor: false },
       { label: 'Nuevo Profesor', ruta: '/profesores/crear', soloProfesor: true  },

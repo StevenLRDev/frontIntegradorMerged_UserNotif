@@ -31,11 +31,14 @@ import Navbar from './componentes/shared/Navbar';
 import Inicio from './componentes/pages/Inicio';
 import Home from './componentes/pages/Home';
 
+
+// ===== PROFESORES =====
+import ListaProfesores from './componentes/profesores/ListaProfesores';
+import FormularioProfesor from './componentes/profesores/FormularioProfesor';
 /*
   PRÓXIMOS MÓDULOS — descomenta cuando estén listos:
 
-  import ListaProfesores from './componentes/profesores/ListaProfesores';
-  import FormularioProfesor from './componentes/profesores/FormularioProfesor';
+
 
   import ListaNotas from './componentes/notas/ListaNotas';
   import FormularioNota from './componentes/notas/FormularioNota';
@@ -103,12 +106,12 @@ function App() {
         <Route path="/notificaciones/crear" element={<RutaSoloProfesor><FormularioNotificacion /></RutaSoloProfesor>} />
         <Route path="/notificaciones/editar/:id" element={<RutaSoloProfesor><EditarNotificacion /></RutaSoloProfesor>} />
 
-        {/* ===== MÓDULO: PROFESORES (próximo) ===== */}
-        {/*
-        <Route path="/profesores" element={<RutaProtegida><ListaProfesores /></RutaProtegida>} />
-        <Route path="/profesores/crear" element={<RutaSoloProfesor><FormularioProfesor /></RutaSoloProfesor>} />
-        <Route path="/profesores/editar/:id" element={<RutaSoloProfesor><FormularioProfesor /></RutaSoloProfesor>} />
-        */}
+        {/* ===== MÓDULO: PROFESORES ===== */}
+        <>
+          <Route path="/profesores" element={<RutaProtegida><ListaProfesores /></RutaProtegida>} />
+          <Route path="/profesores/crear" element={<RutaSoloProfesor><FormularioProfesor /></RutaSoloProfesor>} />
+          <Route path="/profesores/editar/:id" element={<RutaSoloProfesor><FormularioProfesor /></RutaSoloProfesor>} />
+        </>
 
         {/* ===== MÓDULO: NOTAS (próximo) ===== */}
         {/*
